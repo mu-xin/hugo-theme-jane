@@ -1,6 +1,6 @@
 {{ if or .Params.contentCopyright (and .Site.Params.contentCopyright (ne .Params.contentCopyright false)) }}
-<div class="post-copyright">
-  <p class="copyright-item">
+<!-- <div class="post-copyright"> -->
+  <!-- <p class="copyright-item">
     <span class="item-title">{{ i18n "author" }}</span>
     <span class="item-content">
       {{- $author_id := .Params.author | default .Site.Author.name -}}
@@ -13,8 +13,8 @@
       {{- $author_name | safeHTML -}}
       {{- end -}}
       </span>
-  </p>
-  <p class="copyright-item">
+  </p> -->
+  <!-- <p class="copyright-item">
     <span class="item-title">{{ i18n "lastMod" }}</span>
     <span class="item-content">{{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</span>
   </p>
@@ -35,6 +35,6 @@
       {{ .Site.Params.contentCopyright | safeHTML }}
     {{- end -}}
     </span>
-  </p>
-</div>
+  </p> -->
+<!-- </div> -->
 {{- end }}
